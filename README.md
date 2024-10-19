@@ -170,7 +170,7 @@ The tool maintains an ignore list in an `ignore.json` file located in your proje
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0 license](LICENSE).
 
 ---
 
