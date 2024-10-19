@@ -95,7 +95,7 @@ try {
         const ignoreData = fs.readFileSync(ignoreFilePath, 'utf8');
         try {
             const ignoreObj = JSON.parse(ignoreData);
-            ignoreList = Object.values(ignoreObj);
+            ignoreList = Object.values(ignoreObj).map(ignoredPath => path.posix.normalize(ignoredPath));
         } catch (parseErr) {
             console.error(`Error parsing ignore.json:`, parseErr);
             fs.writeFileSync(ignoreFilePath, '{}', 'utf8');
@@ -115,15 +115,29 @@ try {
 } catch (err) {
 }
 
+function normalizePath(filePath) {
+    const resolvedPath = path.resolve(process.cwd(), filePath);
+    const relativePath = path.relative(process.cwd(), resolvedPath);
+    const normalizedPath = path.normalize(relativePath);
+    const unixStylePath = normalizedPath.split(path.sep).join('/');
+    return path.posix.normalize(unixStylePath);
+}
+
 function isIgnored(filePath) {
-    const relativePath = path.relative(process.cwd(), filePath);
+    const normalizedPath = normalizePath(filePath);
+    for (const ignoredPath of ignoreList) {
+        if (normalizedPath === ignoredPath || normalizedPath.startsWith(ignoredPath + '/')) {
+            return true;
+        }
+    }
+
     for (const pattern of ignorePatterns) {
         if (pattern.endsWith('/')) {
-            if (relativePath.startsWith(pattern)) {
+            if (normalizedPath.startsWith(pattern)) {
                 return true;
             }
         } else {
-            if (relativePath === pattern) {
+            if (normalizedPath === pattern) {
                 return true;
             }
         }
@@ -154,10 +168,10 @@ function processFile(filePath) {
         return;
     }
 
-    const relativePath = path.relative(process.cwd(), filePath);
+    const normalizedRelativePath = normalizePath(filePath);
     const baseName = path.basename(filePath);
 
-    if (ignoreList.includes(relativePath) || ignoreList.includes(baseName)) {
+    if (ignoreList.includes(normalizedRelativePath) || ignoreList.includes(baseName)) {
         return;
     }
 
@@ -187,6 +201,10 @@ function includeFile(filePath) {
 }
 
 function walkDir(dir) {
+    if (isIgnored(dir)) {
+        return;
+    }
+
     let files;
     try {
         files = fs.readdirSync(dir);
@@ -263,12 +281,12 @@ Options:
     -h, --help            Show this help message
 
 Commands:
-    ignore <filenames...> Add files to the ignore list
+    ignore <filenames...> Add files or directories to the ignore list
     reset                 Reset the ignore list
 
 Examples:
     dump_source -lang c -ext .html .css
-    dump_source ignore filename1.js filename2.js
+    dump_source ignore "filename1.js" "filename2.js" "C:\\path\\to\\directory"
     dump_source reset
 `);
 }
@@ -284,15 +302,16 @@ function addToIgnoreList(files) {
         }
     } catch (err) {
         console.error(`Error reading ignore.json:`, err);
+        console.log(`To check the list, go to ${ignoreFilePath}`);
     }
 
     const existingKeys = Object.keys(ignoreObj).map(k => parseInt(k)).filter(k => !isNaN(k));
     let nextKey = existingKeys.length > 0 ? Math.max(...existingKeys) + 1 : 1;
 
     files.forEach(file => {
-        const resolvedPath = path.relative(process.cwd(), file);
-        if (!Object.values(ignoreObj).includes(resolvedPath)) {
-            ignoreObj[nextKey.toString()] = resolvedPath;
+        const normalizedPath = normalizePath(file);
+        if (!Object.values(ignoreObj).includes(normalizedPath)) {
+            ignoreObj[nextKey.toString()] = normalizedPath;
             nextKey++;
         }
     });
@@ -300,6 +319,7 @@ function addToIgnoreList(files) {
     try {
         fs.writeFileSync(ignoreFilePath, JSON.stringify(ignoreObj, null, 2), 'utf8');
         console.log(`Added to ignore list: ${files.join(', ')}`);
+        console.log(`To check the list, go to ${ignoreFilePath}`);
     } catch (err) {
         console.error(`Error writing to ignore.json:`, err);
     }
@@ -313,6 +333,7 @@ function resetIgnoreList() {
         console.log('Ignore list has been reset.');
     } catch (err) {
         console.error(`Error resetting ignore.json:`, err);
+        console.log(`To check the list, go to ${ignoreFilePath}`);
     }
 }
 

@@ -1,6 +1,6 @@
 {
   "name": "dump_source",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dump_source is a Node.js script to recursively dump the source code of a project while syncing with .gitignore to exclude unwanted files. ",
   "main": "index.js",
   "bin": {
