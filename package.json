@@ -1,0 +1,39 @@
+{
+  "name": "dump_source",
+  "version": "1.0.0",
+  "description": "dump_source is a Node.js script to recursively dump the source code of a project while syncing with .gitignore to exclude unwanted files. ",
+  "main": "index.js",
+  "bin": {
+    "dump_source": "./index.js"
+  },
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suyeonORG/dump_source.git"
+  },
+  "keywords": [
+    "nodejs",
+    "dump",
+    "source",
+    "markdown",
+    "ai",
+    "prompt"
+  ],
+  "author": "suyeonORG",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/suyeonORG/dump_source/issues"
+  },
+  "homepage": "https://github.com/suyeonORG/dump_source#readme",
+  "files": [
+    "index.js",
+    "README.md",
+    "config.json",
+    "ignore.json"
+  ],
+  "preferGlobal": true
+}

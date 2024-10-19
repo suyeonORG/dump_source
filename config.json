@@ -1,0 +1,842 @@
+{
+    "c": {
+        "abbreviations": ["c"],
+        "file_extensions": [".c", ".h", ".cats", ".idc"]
+    },
+    "c++": {
+        "abbreviations": ["cpp", "c++", "cplusplus"],
+        "file_extensions": [".cpp", ".cc", ".cxx", ".hpp", ".hh", ".hxx", ".h", ".ipp", ".tpp", ".inl", ".c++", ".cp", ".cxx", ".h++", ".hp", ".hxx", ".ii", ".cu", ".cuh"]
+    },
+    "csharp": {
+        "abbreviations": ["c#", "csharp", "cs"],
+        "file_extensions": [".cs", ".csx", ".cake", ".csproj", ".sln"]
+    },
+    "java": {
+        "abbreviations": ["java", "jdk", "jre"],
+        "file_extensions": [".java", ".jsp", ".jar", ".jad", ".class", ".jmod", ".jws"]
+    },
+    "python": {
+        "abbreviations": ["python", "py", "py3", "py2", "python3", "python2"],
+        "file_extensions": [".py", ".pyw", ".pyi", ".pyc", ".pyo", ".pyx", ".pxd", ".pxi"]
+    },
+    "javascript": {
+        "abbreviations": ["javascript", "js", "es", "es6", "node", "nodejs"],
+        "file_extensions": [".js", ".mjs", ".cjs", ".jsx", ".json", ".node", ".es6", ".pac", ".jsm", ".jss", ".html", ".htm", ".xhtml", ".css", ".scss", ".sass", ".less", ".styl"]
+    },
+    "typescript": {
+        "abbreviations": ["typescript", "ts"],
+        "file_extensions": [".ts", ".tsx", ".d.ts", "tsconfig.json"]
+    },
+    "html": {
+        "abbreviations": ["html", "htm"],
+        "file_extensions": [".html", ".htm", ".xhtml", ".jhtml", ".phtml", ".php", ".inc"]
+    },
+    "css": {
+        "abbreviations": ["css", "styles"],
+        "file_extensions": [".css", ".scss", ".sass", ".less", ".styl", ".stylus", ".pcss"]
+    },
+    "php": {
+        "abbreviations": ["php"],
+        "file_extensions": [".php", ".inc", ".phtml", ".php3", ".php4", ".php5", ".phps", ".php7", ".php8"]
+    },
+    "ruby": {
+        "abbreviations": ["ruby", "rb"],
+        "file_extensions": [".rb", ".erb", ".rake", ".gemspec", ".rbw", ".rbx", ".rjs"]
+    },
+    "go": {
+        "abbreviations": ["go", "golang"],
+        "file_extensions": [".go"]
+    },
+    "rust": {
+        "abbreviations": ["rust", "rs"],
+        "file_extensions": [".rs", "Cargo.toml", "Cargo.lock"]
+    },
+    "swift": {
+        "abbreviations": ["swift"],
+        "file_extensions": [".swift", ".xib", ".storyboard"]
+    },
+    "kotlin": {
+        "abbreviations": ["kotlin", "kt"],
+        "file_extensions": [".kt", ".kts", ".ktm"]
+    },
+    "scala": {
+        "abbreviations": ["scala", "sc"],
+        "file_extensions": [".scala", ".sc", ".sbt"]
+    },
+    "haskell": {
+        "abbreviations": ["haskell", "hs"],
+        "file_extensions": [".hs", ".lhs", ".hs-boot", ".hs-boot", ".hsc", ".hsinc"]
+    },
+    "lua": {
+        "abbreviations": ["lua"],
+        "file_extensions": [".lua", ".wlua"]
+    },
+    "perl": {
+        "abbreviations": ["perl", "pl"],
+        "file_extensions": [".pl", ".pm", ".t", ".pod", ".psgi", ".al"]
+    },
+    "objective-c": {
+        "abbreviations": ["objective-c", "objc"],
+        "file_extensions": [".m", ".mm", ".h"]
+    },
+    "shell": {
+        "abbreviations": ["shell", "sh", "bash", "zsh"],
+        "file_extensions": [".sh", ".bash", ".zsh", ".ksh", ".csh", ".tcsh", ".fish", ".ash", ".dash", ".ebuild", ".eclass", ".profile", ".bashrc", ".bash_profile"]
+    },
+    "batch": {
+        "abbreviations": ["batch", "bat", "cmd"],
+        "file_extensions": [".bat", ".cmd"]
+    },
+    "r": {
+        "abbreviations": ["r"],
+        "file_extensions": [".R", ".r", ".Rmd", ".Rnw", ".Rproj", ".RData", ".Rhistory"]
+    },
+    "matlab": {
+        "abbreviations": ["matlab"],
+        "file_extensions": [".m", ".mat", ".fig"]
+    },
+    "julia": {
+        "abbreviations": ["julia", "jl"],
+        "file_extensions": [".jl"]
+    },
+    "dart": {
+        "abbreviations": ["dart"],
+        "file_extensions": [".dart", "pubspec.yaml"]
+    },
+    "elixir": {
+        "abbreviations": ["elixir", "ex"],
+        "file_extensions": [".ex", ".exs"]
+    },
+    "erlang": {
+        "abbreviations": ["erlang", "erl"],
+        "file_extensions": [".erl", ".hrl", ".escript", ".xrl", ".yrl"]
+    },
+    "fsharp": {
+        "abbreviations": ["f#", "fsharp"],
+        "file_extensions": [".fs", ".fsi", ".fsx", ".fsscript"]
+    },
+    "groovy": {
+        "abbreviations": ["groovy", "gv"],
+        "file_extensions": [".groovy", ".gvy", ".gy", ".gsh", "Jenkinsfile"]
+    },
+    "fortran": {
+        "abbreviations": ["fortran", "f90"],
+        "file_extensions": [".f90", ".f95", ".f03", ".f08", ".for", ".f", ".f77", ".fpp"]
+    },
+    "lisp": {
+        "abbreviations": ["lisp"],
+        "file_extensions": [".lisp", ".lsp", ".cl", ".asd"]
+    },
+    "ocaml": {
+        "abbreviations": ["ocaml", "ml"],
+        "file_extensions": [".ml", ".mli", ".mll", ".mly"]
+    },
+    "scheme": {
+        "abbreviations": ["scheme", "scm", "ss"],
+        "file_extensions": [".scm", ".ss", ".sch", ".rkt", ".oak"]
+    },
+    "visualbasic": {
+        "abbreviations": ["visualbasic", "vb", "vba"],
+        "file_extensions": [".vb", ".vbs", ".bas", ".frm", ".cls", ".ctl", ".vbproj", ".sln"]
+    },
+    "pascal": {
+        "abbreviations": ["pascal"],
+        "file_extensions": [".pas", ".pp", ".inc", ".lpr"]
+    },
+    "assembly": {
+        "abbreviations": ["assembly", "asm"],
+        "file_extensions": [".asm", ".s", ".S", ".inc", ".nasm", ".a51"]
+    },
+    "prolog": {
+        "abbreviations": ["prolog", "pl"],
+        "file_extensions": [".pl", ".pro", ".P"]
+    },
+    "sql": {
+        "abbreviations": ["sql"],
+        "file_extensions": [".sql", ".psql", ".plsql", ".pgsql"]
+    },
+    "xml": {
+        "abbreviations": ["xml"],
+        "file_extensions": [".xml", ".xsl", ".xslt", ".xsd", ".svg", ".dtd", ".wsdl", ".rss", ".atom", ".plist", ".opf", ".ncx"]
+    },
+    "yaml": {
+        "abbreviations": ["yaml", "yml"],
+        "file_extensions": [".yaml", ".yml"]
+    },
+    "json": {
+        "abbreviations": ["json"],
+        "file_extensions": [".json", ".geojson", ".topojson", ".jsonld"]
+    },
+    "docker": {
+        "abbreviations": ["docker"],
+        "file_extensions": ["Dockerfile", "dockerfile", "docker-compose.yml", ".dockerignore"]
+    },
+    "make": {
+        "abbreviations": ["make"],
+        "file_extensions": ["Makefile", "makefile", ".mk", "GNUmakefile"]
+    },
+    "react": {
+        "abbreviations": ["react"],
+        "file_extensions": [".js", ".jsx", ".ts", ".tsx"]
+    },
+    "angular": {
+        "abbreviations": ["angular", "ng"],
+        "file_extensions": [".ts", ".html", ".css", ".scss", ".sass"]
+    },
+    "vue": {
+        "abbreviations": ["vue"],
+        "file_extensions": [".vue", ".js", ".ts", ".jsx", ".tsx"]
+    },
+    "svelte": {
+        "abbreviations": ["svelte"],
+        "file_extensions": [".svelte"]
+    },
+    "docusaurus": {
+        "abbreviations": ["docusaurus"],
+        "file_extensions": [".js", ".jsx", ".ts", ".tsx", ".md", ".mdx"]
+    },
+    "gatsby": {
+        "abbreviations": ["gatsby"],
+        "file_extensions": [".js", ".jsx", ".ts", ".tsx", "gatsby-config.js", "gatsby-node.js"]
+    },
+    "nextjs": {
+        "abbreviations": ["nextjs", "next"],
+        "file_extensions": [".js", ".jsx", ".ts", ".tsx", "next.config.js"]
+    },
+    "nuxtjs": {
+        "abbreviations": ["nuxtjs", "nuxt"],
+        "file_extensions": [".js", ".vue", "nuxt.config.js"]
+    },
+    "laravel": {
+        "abbreviations": ["laravel"],
+        "file_extensions": [".php", ".blade.php", "composer.json"]
+    },
+    "symfony": {
+        "abbreviations": ["symfony"],
+        "file_extensions": [".php", ".twig", "composer.json"]
+    },
+    "django": {
+        "abbreviations": ["django"],
+        "file_extensions": [".py", ".html", ".css", ".js"]
+    },
+    "flask": {
+        "abbreviations": ["flask"],
+        "file_extensions": [".py"]
+    },
+    "express": {
+        "abbreviations": ["express", "expressjs"],
+        "file_extensions": [".js", ".jsx", ".ts", ".tsx"]
+    },
+    "koa": {
+        "abbreviations": ["koa"],
+        "file_extensions": [".js"]
+    },
+    "spring": {
+        "abbreviations": ["spring"],
+        "file_extensions": [".java", ".xml", ".properties", ".yml"]
+    },
+    "play": {
+        "abbreviations": ["play"],
+        "file_extensions": [".scala", ".java", ".html", ".scala.html"]
+    },
+    "asp.net": {
+        "abbreviations": ["asp.net", "aspnet", "dotnet"],
+        "file_extensions": [".cs", ".cshtml", ".vbhtml", ".config", ".aspx", ".ascx", ".ashx", ".asmx", ".svc", ".webinfo"]
+    },
+    "meteor": {
+        "abbreviations": ["meteor"],
+        "file_extensions": [".js", ".html", ".css", ".json"]
+    },
+    "ember": {
+        "abbreviations": ["ember"],
+        "file_extensions": [".js", ".hbs", ".html", ".css"]
+    },
+    "backbone": {
+        "abbreviations": ["backbone"],
+        "file_extensions": [".js"]
+    },
+    "elm": {
+        "abbreviations": ["elm"],
+        "file_extensions": [".elm"]
+    },
+    "clojure": {
+        "abbreviations": ["clojure", "clj"],
+        "file_extensions": [".clj", ".cljs", ".cljc", ".edn"]
+    },
+    "coffeescript": {
+        "abbreviations": ["coffeescript", "coffee"],
+        "file_extensions": [".coffee", ".litcoffee", "Cakefile"]
+    },
+    "haxe": {
+        "abbreviations": ["haxe", "hx"],
+        "file_extensions": [".hx", ".hxml"]
+    },
+    "purescript": {
+        "abbreviations": ["purescript", "purs"],
+        "file_extensions": [".purs"]
+    },
+    "nim": {
+        "abbreviations": ["nim"],
+        "file_extensions": [".nim", ".nims", ".nimble"]
+    },
+    "crystal": {
+        "abbreviations": ["crystal"],
+        "file_extensions": [".cr", ".ecr"]
+    },
+    "godot": {
+        "abbreviations": ["godot"],
+        "file_extensions": [".gd", ".tres", ".tscn", ".escn", ".res", ".import"]
+    },
+    "reasonml": {
+        "abbreviations": ["reasonml", "re"],
+        "file_extensions": [".re", ".rei"]
+    },
+    "solidity": {
+        "abbreviations": ["solidity", "sol"],
+        "file_extensions": [".sol"]
+    },
+    "tcl": {
+        "abbreviations": ["tcl"],
+        "file_extensions": [".tcl", ".itcl", ".itk"]
+    },
+    "cobol": {
+        "abbreviations": ["cobol"],
+        "file_extensions": [".cob", ".cbl", ".ccp", ".cobol", ".cpy"]
+    },
+    "ada": {
+        "abbreviations": ["ada"],
+        "file_extensions": [".adb", ".ads", ".ada"]
+    },
+    "d": {
+        "abbreviations": ["dlang", "d"],
+        "file_extensions": [".d", ".di"]
+    },
+    "sml": {
+        "abbreviations": ["sml", "standardml"],
+        "file_extensions": [".sml", ".sig", ".fun"]
+    },
+    "verilog": {
+        "abbreviations": ["verilog", "v"],
+        "file_extensions": [".v", ".vh", ".sv", ".svh"]
+    },
+    "vhdl": {
+        "abbreviations": ["vhdl"],
+        "file_extensions": [".vhd", ".vhdl", ".vhf", ".vhi", ".vho", ".vhs", ".vht", ".vhw"]
+    },
+    "racket": {
+        "abbreviations": ["racket", "rkt"],
+        "file_extensions": [".rkt", ".rktd", ".rktl", ".scrbl"]
+    },
+    "clojurescript": {
+        "abbreviations": ["clojurescript", "cljs"],
+        "file_extensions": [".cljs"]
+    },
+    "latex": {
+        "abbreviations": ["latex", "tex"],
+        "file_extensions": [".tex", ".sty", ".cls", ".bib", ".bst", ".dtx", ".ins", ".ltx", ".latex", ".toc", ".lof", ".lot", ".fls", ".out", ".brf", ".blg", ".bbl"]
+    },
+    "markdown": {
+        "abbreviations": ["markdown", "md"],
+        "file_extensions": [".md", ".markdown", ".mdown", ".mkdn", ".mkd", ".mdwn", ".mdtxt", ".mdtext"]
+    },
+    "asciidoc": {
+        "abbreviations": ["asciidoc", "adoc"],
+        "file_extensions": [".adoc", ".asciidoc", ".asc"]
+    },
+    "restructuredtext": {
+        "abbreviations": ["restructuredtext", "rst"],
+        "file_extensions": [".rst", ".rest"]
+    },
+    "org": {
+        "abbreviations": ["org"],
+        "file_extensions": [".org"]
+    },
+    "textile": {
+        "abbreviations": ["textile"],
+        "file_extensions": [".textile"]
+    },
+    "config": {
+        "abbreviations": ["config", "cfg", "conf"],
+        "file_extensions": [".ini", ".cfg", ".conf", ".config", ".cnf", ".cf", ".config"]
+    },
+    "terraform": {
+        "abbreviations": ["terraform", "tf"],
+        "file_extensions": [".tf", ".tfvars", ".hcl"]
+    },
+    "ansible": {
+        "abbreviations": ["ansible"],
+        "file_extensions": [".yaml", ".yml", ".ini"]
+    },
+    "jenkins": {
+        "abbreviations": ["jenkins"],
+        "file_extensions": ["Jenkinsfile"]
+    },
+    "travisci": {
+        "abbreviations": ["travisci", "travis"],
+        "file_extensions": [".travis.yml"]
+    },
+    "circleci": {
+        "abbreviations": ["circleci"],
+        "file_extensions": [".circleci/config.yml"]
+    },
+    "githubactions": {
+        "abbreviations": ["githubactions", "actions"],
+        "file_extensions": [".github/workflows/*.yml"]
+    },
+    "gitlabci": {
+        "abbreviations": ["gitlabci"],
+        "file_extensions": [".gitlab-ci.yml"]
+    },
+    "vagrant": {
+        "abbreviations": ["vagrant"],
+        "file_extensions": ["Vagrantfile"]
+    },
+    "chef": {
+        "abbreviations": ["chef"],
+        "file_extensions": [".rb", "Berksfile", "Policyfile.rb"]
+    },
+    "puppet": {
+        "abbreviations": ["puppet"],
+        "file_extensions": [".pp", "Puppetfile"]
+    },
+    "packer": {
+        "abbreviations": ["packer"],
+        "file_extensions": [".pkr.hcl", ".json"]
+    },
+    "hcl": {
+        "abbreviations": ["hcl"],
+        "file_extensions": [".hcl", ".nomad"]
+    },
+    "gradle": {
+        "abbreviations": ["gradle"],
+        "file_extensions": ["build.gradle", "build.gradle.kts", "settings.gradle", "gradlew", "gradle.properties"]
+    },
+    "maven": {
+        "abbreviations": ["maven"],
+        "file_extensions": ["pom.xml", "settings.xml"]
+    },
+    "ant": {
+        "abbreviations": ["ant"],
+        "file_extensions": ["build.xml", "ivy.xml"]
+    },
+    "sbt": {
+        "abbreviations": ["sbt"],
+        "file_extensions": ["build.sbt", ".sbt", ".scala"]
+    },
+    "cmake": {
+        "abbreviations": ["cmake"],
+        "file_extensions": ["CMakeLists.txt", ".cmake"]
+    },
+    "bazel": {
+        "abbreviations": ["bazel"],
+        "file_extensions": [".bzl", "BUILD", "WORKSPACE", "BUILD.bazel", "WORKSPACE.bazel"]
+    },
+    "gulp": {
+        "abbreviations": ["gulp"],
+        "file_extensions": ["gulpfile.js", "gulpfile.babel.js", "gulpfile.ts", "gulpfile.coffee"]
+    },
+    "grunt": {
+        "abbreviations": ["grunt"],
+        "file_extensions": ["Gruntfile.js", "Gruntfile.coffee"]
+    },
+    "webpack": {
+        "abbreviations": ["webpack"],
+        "file_extensions": ["webpack.config.js", "webpack.config.ts", "webpack.common.js", "webpack.prod.js", "webpack.dev.js"]
+    },
+    "rollup": {
+        "abbreviations": ["rollup"],
+        "file_extensions": ["rollup.config.js", "rollup.config.ts"]
+    },
+    "parcel": {
+        "abbreviations": ["parcel"],
+        "file_extensions": [".parcelrc"]
+    },
+    "babel": {
+        "abbreviations": ["babel"],
+        "file_extensions": [".babelrc", "babel.config.js", "babel.config.json"]
+    },
+    "eslint": {
+        "abbreviations": ["eslint"],
+        "file_extensions": [".eslintrc.js", ".eslintrc.json", ".eslintrc.yml", ".eslintignore"]
+    },
+    "prettier": {
+        "abbreviations": ["prettier"],
+        "file_extensions": [".prettierrc", ".prettierrc.js", ".prettierrc.json", ".prettierignore"]
+    },
+    "tslint": {
+        "abbreviations": ["tslint"],
+        "file_extensions": ["tslint.json", "tslint.yaml", "tslint.yml"]
+    },
+    "stylelint": {
+        "abbreviations": ["stylelint"],
+        "file_extensions": [".stylelintrc", ".stylelintrc.js", ".stylelintrc.json", ".stylelintignore"]
+    },
+    "karma": {
+        "abbreviations": ["karma"],
+        "file_extensions": ["karma.conf.js", "karma.conf.ts"]
+    },
+    "protractor": {
+        "abbreviations": ["protractor"],
+        "file_extensions": ["protractor.conf.js"]
+    },
+    "jest": {
+        "abbreviations": ["jest"],
+        "file_extensions": ["jest.config.js", "jest.config.ts", "jest.setup.js", "jest.setup.ts"]
+    },
+    "mocha": {
+        "abbreviations": ["mocha"],
+        "file_extensions": [".mocharc.js", ".mocharc.json", ".mocharc.yml", "test.js"]
+    },
+    "ava": {
+        "abbreviations": ["ava"],
+        "file_extensions": ["ava.config.js"]
+    },
+    "nightwatch": {
+        "abbreviations": ["nightwatch"],
+        "file_extensions": ["nightwatch.conf.js"]
+    },
+    "cypress": {
+        "abbreviations": ["cypress"],
+        "file_extensions": ["cypress.json", "cypress.env.json"]
+    },
+    "selenium": {
+        "abbreviations": ["selenium"],
+        "file_extensions": [".java", ".js", ".py"]
+    },
+    "puppeteer": {
+        "abbreviations": ["puppeteer"],
+        "file_extensions": [".js"]
+    },
+    "webdriverio": {
+        "abbreviations": ["webdriverio"],
+        "file_extensions": ["wdio.conf.js", "wdio.conf.ts"]
+    },
+    "testcafe": {
+        "abbreviations": ["testcafe"],
+        "file_extensions": [".js", ".ts"]
+    },
+    "codeceptjs": {
+        "abbreviations": ["codeceptjs"],
+        "file_extensions": [".js", ".ts"]
+    },
+    "pact": {
+        "abbreviations": ["pact"],
+        "file_extensions": [".js", ".ts", ".json"]
+    },
+    "applitools": {
+        "abbreviations": ["applitools"],
+        "file_extensions": [".js", ".ts"]
+    },
+    "storybook": {
+        "abbreviations": ["storybook"],
+        "file_extensions": ["main.js", "preview.js", "preview.ts", "storybook.js"]
+    },
+    "expo": {
+        "abbreviations": ["expo"],
+        "file_extensions": ["app.json", "app.config.js"]
+    },
+    "reactnative": {
+        "abbreviations": ["reactnative"],
+        "file_extensions": [".js", ".jsx", ".ts", ".tsx", "index.js", "App.js"]
+    },
+    "electron": {
+        "abbreviations": ["electron"],
+        "file_extensions": [".js", ".json", ".html", ".css", "main.js", "preload.js", "renderer.js"]
+    },
+    "cordova": {
+        "abbreviations": ["cordova"],
+        "file_extensions": [".js", ".html", ".css", "config.xml"]
+    },
+    "ionic": {
+        "abbreviations": ["ionic"],
+        "file_extensions": [".ts", ".html", ".scss", "ionic.config.json"]
+    },
+    "capacitor": {
+        "abbreviations": ["capacitor"],
+        "file_extensions": ["capacitor.config.json"]
+    },
+    "flutter": {
+        "abbreviations": ["flutter"],
+        "file_extensions": [".dart", "pubspec.yaml"]
+    },
+    "android": {
+        "abbreviations": ["android"],
+        "file_extensions": [".java", ".kt", ".xml", "AndroidManifest.xml", "build.gradle"]
+    },
+    "ios": {
+        "abbreviations": ["ios"],
+        "file_extensions": [".swift", ".h", ".m", ".xib", ".storyboard", ".plist"]
+    },
+    "unity": {
+        "abbreviations": ["unity"],
+        "file_extensions": [".cs", ".shader", ".unity", ".prefab", ".mat", ".meta", ".anim", ".controller"]
+    },
+    "unreal": {
+        "abbreviations": ["unreal"],
+        "file_extensions": [".cpp", ".h", ".uproject", ".uasset", ".umap"]
+    },
+    "xamarin": {
+        "abbreviations": ["xamarin"],
+        "file_extensions": [".cs", ".xaml", ".axml", ".sln"]
+    },
+    "phaser": {
+        "abbreviations": ["phaser"],
+        "file_extensions": [".js"]
+    },
+    "threejs": {
+        "abbreviations": ["threejs"],
+        "file_extensions": [".js"]
+    },
+    "blender": {
+        "abbreviations": ["blender"],
+        "file_extensions": [".py", ".blend"]
+    },
+    "openframeworks": {
+        "abbreviations": ["openframeworks", "of"],
+        "file_extensions": [".cpp", ".h"]
+    },
+    "processing": {
+        "abbreviations": ["processing", "pde"],
+        "file_extensions": [".pde"]
+    },
+    "tensorflow": {
+        "abbreviations": ["tensorflow"],
+        "file_extensions": [".py", ".ipynb"]
+    },
+    "pytorch": {
+        "abbreviations": ["pytorch"],
+        "file_extensions": [".py", ".ipynb"]
+    },
+    "keras": {
+        "abbreviations": ["keras"],
+        "file_extensions": [".py", ".ipynb"]
+    },
+    "scikitlearn": {
+        "abbreviations": ["scikitlearn", "sklearn"],
+        "file_extensions": [".py", ".ipynb"]
+    },
+    "numpy": {
+        "abbreviations": ["numpy", "np"],
+        "file_extensions": [".py", ".ipynb"]
+    },
+    "pandas": {
+        "abbreviations": ["pandas", "pd"],
+        "file_extensions": [".py", ".ipynb"]
+    },
+    "matplotlib": {
+        "abbreviations": ["matplotlib", "plt"],
+        "file_extensions": [".py", ".ipynb"]
+    },
+    "opencv": {
+        "abbreviations": ["opencv", "cv"],
+        "file_extensions": [".py", ".cpp", ".h", ".ipynb"]
+    },
+    "docker-compose": {
+        "abbreviations": ["docker-compose"],
+        "file_extensions": ["docker-compose.yml", "docker-compose.yaml"]
+    },
+    "helm": {
+        "abbreviations": ["helm"],
+        "file_extensions": [".yaml", ".yml", ".tpl"]
+    },
+    "aws": {
+        "abbreviations": ["aws"],
+        "file_extensions": [".json", ".yaml", ".yml", ".template"]
+    },
+    "azure": {
+        "abbreviations": ["azure"],
+        "file_extensions": [".json", ".armtemplate", ".bicep"]
+    },
+    "gcp": {
+        "abbreviations": ["gcp", "googlecloud"],
+        "file_extensions": [".json", ".yaml", ".yml"]
+    },
+    "serverless": {
+        "abbreviations": ["serverless", "sls"],
+        "file_extensions": [".yaml", ".yml", "serverless.yml"]
+    },
+    "graphql": {
+        "abbreviations": ["graphql", "gql"],
+        "file_extensions": [".graphql", ".gql"]
+    },
+    "protobuf": {
+        "abbreviations": ["protobuf", "proto"],
+        "file_extensions": [".proto"]
+    },
+    "thrift": {
+        "abbreviations": ["thrift"],
+        "file_extensions": [".thrift"]
+    },
+    "openapi": {
+        "abbreviations": ["openapi"],
+        "file_extensions": [".yaml", ".yml", ".json"]
+    },
+    "swagger": {
+        "abbreviations": ["swagger"],
+        "file_extensions": [".yaml", ".yml", ".json"]
+    },
+    "nosql": {
+        "abbreviations": ["nosql"],
+        "file_extensions": [".json", ".bson"]
+    },
+    "jupyter": {
+        "abbreviations": ["jupyter", "ipynb"],
+        "file_extensions": [".ipynb"]
+    },
+    "vscode": {
+        "abbreviations": ["vscode", "code"],
+        "file_extensions": [".vscode/*.json", "settings.json", "launch.json", "tasks.json"]
+    },
+    "eclipse": {
+        "abbreviations": ["eclipse"],
+        "file_extensions": [".project", ".classpath", ".settings/*"]
+    },
+    "intellij": {
+        "abbreviations": ["intellij", "idea"],
+        "file_extensions": [".idea/*", "*.iml"]
+    },
+    "sublime": {
+        "abbreviations": ["sublime"],
+        "file_extensions": [".sublime-project", ".sublime-workspace"]
+    },
+    "androidstudio": {
+        "abbreviations": ["androidstudio"],
+        "file_extensions": [".iml", ".gradle", "build.gradle", "settings.gradle"]
+    },
+    "xcode": {
+        "abbreviations": ["xcode"],
+        "file_extensions": [".xcodeproj", ".xcworkspace", ".xcconfig", ".plist", ".h", ".m"]
+    },
+    "visualstudio": {
+        "abbreviations": ["visualstudio", "vs"],
+        "file_extensions": [".sln", ".csproj", ".vbproj", ".vcxproj", ".vcproj", ".props", ".targets"]
+    },
+    "atom": {
+        "abbreviations": ["atom"],
+        "file_extensions": [".atom/*", "config.cson"]
+    },
+    "netbeans": {
+        "abbreviations": ["netbeans"],
+        "file_extensions": [".nbproject/*", "build.xml"]
+    },
+    "emacs": {
+        "abbreviations": ["emacs"],
+        "file_extensions": [".emacs", ".emacs.d/*", ".el", ".elc"]
+    },
+    "vim": {
+        "abbreviations": ["vim"],
+        "file_extensions": [".vimrc", ".vim/*", ".vim"]
+    },
+    "toml": {
+        "abbreviations": ["toml"],
+        "file_extensions": [".toml"]
+    },
+    "ini": {
+        "abbreviations": ["ini"],
+        "file_extensions": [".ini", ".cfg"]
+    },
+    "csv": {
+        "abbreviations": ["csv"],
+        "file_extensions": [".csv"]
+    },
+    "tsv": {
+        "abbreviations": ["tsv"],
+        "file_extensions": [".tsv"]
+    },
+    "log": {
+        "abbreviations": ["log"],
+        "file_extensions": [".log"]
+    },
+    "git": {
+        "abbreviations": ["git"],
+        "file_extensions": [".gitignore", ".gitattributes", ".gitmodules", ".gitkeep"]
+    },
+    "npm": {
+        "abbreviations": ["npm"],
+        "file_extensions": ["package.json", "package-lock.json", ".npmrc", ".npmignore"]
+    },
+    "yarn": {
+        "abbreviations": ["yarn"],
+        "file_extensions": ["package.json", "yarn.lock", ".yarnrc", ".yarnignore"]
+    },
+    "composer": {
+        "abbreviations": ["composer"],
+        "file_extensions": ["composer.json", "composer.lock"]
+    },
+    "pip": {
+        "abbreviations": ["pip"],
+        "file_extensions": ["requirements.txt", "pip.conf", "setup.py"]
+    },
+    "poetry": {
+        "abbreviations": ["poetry"],
+        "file_extensions": ["pyproject.toml", "poetry.lock"]
+    },
+    "cargo": {
+        "abbreviations": ["cargo"],
+        "file_extensions": ["Cargo.toml", "Cargo.lock"]
+    },
+    "license": {
+        "abbreviations": ["license"],
+        "file_extensions": ["LICENSE", "COPYING", "LICENSE.md", "LICENSE.txt"]
+    },
+    "readme": {
+        "abbreviations": ["readme"],
+        "file_extensions": ["README", "README.md", "README.txt", "README.rst", "README.markdown"]
+    },
+    "changelog": {
+        "abbreviations": ["changelog"],
+        "file_extensions": ["CHANGELOG", "CHANGELOG.md", "CHANGELOG.txt"]
+    },
+    "contributing": {
+        "abbreviations": ["contributing"],
+        "file_extensions": ["CONTRIBUTING", "CONTRIBUTING.md", "CONTRIBUTING.txt"]
+    },
+    "codeowners": {
+        "abbreviations": ["codeowners"],
+        "file_extensions": ["CODEOWNERS"]
+    },
+    "dockerignore": {
+        "abbreviations": [".dockerignore"],
+        "file_extensions": [".dockerignore"]
+    },
+    "npmignore": {
+        "abbreviations": [".npmignore"],
+        "file_extensions": [".npmignore"]
+    },
+    "eslintignore": {
+        "abbreviations": [".eslintignore"],
+        "file_extensions": [".eslintignore"]
+    },
+    "prettierignore": {
+        "abbreviations": [".prettierignore"],
+        "file_extensions": [".prettierignore"]
+    },
+    "gitignore": {
+        "abbreviations": [".gitignore"],
+        "file_extensions": [".gitignore"]
+    },
+    "editorconfig": {
+        "abbreviations": ["editorconfig"],
+        "file_extensions": [".editorconfig"]
+    },
+    "azurepipelines": {
+        "abbreviations": ["azurepipelines"],
+        "file_extensions": [".azure-pipelines.yml"]
+    },
+    "netlify": {
+        "abbreviations": ["netlify"],
+        "file_extensions": ["netlify.toml"]
+    },
+    "heroku": {
+        "abbreviations": ["heroku"],
+        "file_extensions": ["Procfile", "Procfile.windows"]
+    },
+    "firebase": {
+        "abbreviations": ["firebase"],
+        "file_extensions": ["firebase.json", ".firebaserc"]
+    },
+    "vercel": {
+        "abbreviations": ["vercel", "now"],
+        "file_extensions": ["vercel.json", "now.json"]
+    }
+}
