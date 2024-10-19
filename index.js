@@ -93,11 +93,17 @@ const ignoreFilePath = path.join(process.cwd(), 'ignore.json');
 try {
     if (fs.existsSync(ignoreFilePath)) {
         const ignoreData = fs.readFileSync(ignoreFilePath, 'utf8');
-        const ignoreObj = JSON.parse(ignoreData);
-        ignoreList = Object.values(ignoreObj);
+        try {
+            const ignoreObj = JSON.parse(ignoreData);
+            ignoreList = Object.values(ignoreObj);
+        } catch (parseErr) {
+            console.error(`Error parsing ignore.json:`, parseErr);
+            fs.writeFileSync(ignoreFilePath, '{}', 'utf8');
+            ignoreList = [];
+        }
     }
 } catch (err) {
-    console.error(`Error reading ignore.json:`, err);
+    console.error(`Error accessing ignore.json:`, err);
 }
 
 let ignorePatterns = [];
