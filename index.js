@@ -21,7 +21,7 @@ function parseArgs() {
                 i++;
             }
             continue;
-        } else if (arg === '-h' || arg === '--help') {
+        } else if (arg === '--h' || arg === '-h' || arg === '--help' || arg === '-help') {
             argObj.help = true;
         } else if (arg === 'ignore') {
             argObj.command = 'ignore';
@@ -104,6 +104,19 @@ try {
     }
 } catch (err) {
     console.error(`Error accessing ignore.json:`, err);
+}
+
+const dumpIgnoreFilePath = path.join(process.cwd(), 'dump_source_ignore.json');
+if (fs.existsSync(dumpIgnoreFilePath)) {
+    console.log("dump_source ignore file found");
+    try {
+        const dumpIgnoreData = fs.readFileSync(dumpIgnoreFilePath, 'utf8');
+        const dumpIgnoreObj = JSON.parse(dumpIgnoreData);
+        const dumpIgnoreList = Object.values(dumpIgnoreObj).map(ignoredPath => path.posix.normalize(ignoredPath));
+        ignoreList = ignoreList.concat(dumpIgnoreList);
+    } catch (err) {
+        // Continue execution without it
+    }
 }
 
 let ignorePatterns = [];
@@ -289,6 +302,8 @@ Examples:
     dump_source ignore "filename1.js" "filename2.js" "C:\\path\\to\\directory"
     dump_source reset
 `);
+console.log(`Script directory: ${__dirname}`);
+console.log(`Author: @suyeonORG`);
 }
 
 function addToIgnoreList(files) {

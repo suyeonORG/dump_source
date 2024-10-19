@@ -2,6 +2,14 @@
 
 A `NodeJS` command-line tool to create a comprehensive markdown dump of your source code files, filtered by programming language or file extensions, while respecting ignore patterns.
 
+## Installation
+
+Install `dump_source` **globally** using `npm`:
+
+```bash
+npm install -g dump_source
+```
+
 ## Table of Contents
 
 - [Installation](#installation)
@@ -15,20 +23,13 @@ A `NodeJS` command-line tool to create a comprehensive markdown dump of your sou
 - [Notes](#notes)
 - [License](#license)
 
-## Installation
-
-Install `dump_source` globally using npm:
-
-```bash
-npm install -g dump_source
-```
-
 ## Features
 
 - **Language-Based Filtering**: Include files based on specified programming languages.
 - **Extension-Based Filtering**: Include additional files by specifying file extensions.
 - **Custom Ignore List**: Exclude specific files or directories using an ignore list.
 - **Respects `.gitignore`**: Automatically ignores files and directories specified in your `.gitignore`.
+- **Additional Ignore File**: Supports `dump_source_ignore.json` in the current directory for custom ignore patterns.
 - **Markdown Output**: Generates a markdown file containing your source code, organized and easy to read.
 - **Timestamped Output**: Output files are timestamped to prevent overwriting previous dumps.
 
@@ -110,11 +111,28 @@ You can customize this file to include additional languages or modify existing o
 
 ## Ignore List
 
-The tool maintains an ignore list in an `ignore.json` file located in your project directory. This allows you to exclude specific files or directories from being included in the dump.
+The tool allows you to exclude specific files or directories from being included in the dump using various ignore mechanisms.
+
+- **Custom Ignore File (`dump_source_ignore.json`)**:
+
+  - If a file named `dump_source_ignore.json` is present in the directory where you run `dump_source`, it will be used as an additional ignore list.
+  - The script will output `"dump_source ignore file found"` when it detects this file.
+  - The file should contain a JSON object with paths to ignore.
+  - Example `dump_source_ignore.json`:
+
+    ```json
+    {
+      "1": "secrets.py",
+      "2": "config/settings.json",
+      "3": "logs/"
+    }
+    ```
+
+  - **Note**: If the file cannot be parsed (e.g., invalid JSON), the script will continue execution without it.
 
 - **Add to Ignore List**:
 
-  Use the `ignore` command followed by filenames or directory names.
+  Use the `ignore` command followed by filenames or directory names to add them to `ignore.json`.
 
   ```bash
   dump_source ignore secrets.py config/
@@ -122,7 +140,7 @@ The tool maintains an ignore list in an `ignore.json` file located in your proje
 
 - **Reset Ignore List**:
 
-  Use the `reset` command to clear the ignore list.
+  Use the `reset` command to clear the `ignore.json` file.
 
   ```bash
   dump_source reset
@@ -148,7 +166,7 @@ The tool maintains an ignore list in an `ignore.json` file located in your proje
     - Its extension matches one of the allowed extensions.
     - Its basename matches one of the allowed extensions (useful for files without extensions).
   - A file is excluded if:
-    - It is specified in the ignore list.
+    - It is specified in the ignore list (`ignore.json` or `dump_source_ignore.json`).
     - It matches a pattern in `.gitignore`.
     - It is one of the always-excluded files (e.g., `.env`).
 
